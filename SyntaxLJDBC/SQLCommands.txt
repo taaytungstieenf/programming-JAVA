@@ -1,0 +1,14 @@
+CREATE DATABASE IF NOT EXISTS demo_db;
+USE demo_db;
+
+CREATE TABLE IF NOT EXISTS users (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(50) NOT NULL,
+    status VARCHAR(20) NOT NULL DEFAULT 'ACTIVE'
+);
+
+-- Thêm dữ liệu thử nghiệm
+INSERT INTO users (username, status) VALUES 
+('nguyenvana', 'ACTIVE'),
+('tranvanb', 'ACTIVE'),
+('lethic', 'INACTIVE');
