@@ -6,11 +6,11 @@ public class UserService {
 
     // 2. Phương thức private: Helper method để kiểm tra định dạng email
     // Bên ngoài (như Main) KHÔNG THỂ gọi trực tiếp hàm này.
-    private boolean isValidEmail(String email) {
+    private boolean isValidEmail(String email) {                            // hàm điều kiện duy nhất
         return email != null && email.contains("@");
     }
 
-    // 3. Phương thức public: Giao diện (API) cho bên ngoài sử dụng
+    // 3. Phương thức public: Giao diện (API) cho bên ngoài sử dụng         // hàm xuất thông tin đăng ký và sử dụng hàm private để kiểm tra email 
     public boolean registerUser(String username, String email) {
         // Gọi lại hàm private nội bộ để kiểm tra
         if (!isValidEmail(email)) {
@@ -24,7 +24,7 @@ public class UserService {
     }
 
     // 4. Phương thức public: Cho phép bên ngoài xem số lượng user (nhưng không thể sửa trực tiếp userCount)
-    public int getUserCount() {
+    public int getUserCount() {                                             // hàm xuất số lượng user đã đăng ký
         return userCount;
     }
 }
