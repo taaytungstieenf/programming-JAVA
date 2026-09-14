@@ -1,0 +1,43 @@
+public static void main
+
+- public            :   Access modifier - means this method can access from outside
+                        That's why you can compile a class then run that class on CLI with: 
+                            
+                            $ javac filename.java
+                            $ java filename
+
+***//***
+
+- static            :   Flexibility in method call
+                        If the method without static "public void main", you must create an object to use that method:
+                            
+                            public void sayHello() {
+                                System.out.println("Hello");
+                            }
+
+                            public void sayHello() {
+                                System.out.println("Hello");
+                            }
+
+***//***
+
+- void              :   Tell JVM that this method doesn't return a value
+                        The method below return an int value:
+                            
+                            public static int calculate() {
+                                return 10;
+                            }
+
+***//***
+
+- main              :   Not an arbitrary name, Java regulate a method entry is *main*
+
+***//***
+
+- String[] args     :   Receive arguments from command line
+                        If you run:
+                            $ java HelloWorld Java SpringBoot MVC
+                        then
+                            String[] args will contain: args[0] = "Java"
+                                                        args[1] = "Spring" 
+                                                        args[2] = "MVC"
