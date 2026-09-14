@@ -2,7 +2,7 @@ package SyntaxJCollectionAndGeneric;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Optional;
+// import java.util.Optional;
 
 // Lớp Generic lưu trữ mọi loại đối tượng T
 public class GenericRepository<T> {
