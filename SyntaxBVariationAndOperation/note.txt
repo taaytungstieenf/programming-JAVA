@@ -5,11 +5,18 @@
                             double productPrice = scanner.nextDouble();
                         nextDouble() read only 5 and there is \n left
 
-                        Then if you run:
+                        Then you run:
                             String storeName = scanner.nextLine();
-                        nextLin() will take \n character left and immediately return to an emty string
-                        
+                        nextLine() will take \n character left and immediately return to an emty string
+
                         So you need:
                             scanner.nextLine();
                         To consume \n afer every:
                             nextDouble()
+
+"""//"""
+
+- next()            :   1 token
+- nextInt()         :   1 integer
+- nextDouble()      :   1 real number
+- nextLine()        :   all everything left of the line include enter
