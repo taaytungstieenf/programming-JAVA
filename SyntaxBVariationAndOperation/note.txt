@@ -1,0 +1,15 @@
+- nextDouble()      :   Reads numbers only
+                        If you input 5 and hit enter, the actual symbols is 5↵ = 5\n
+
+                        So if you run:
+                            double productPrice = scanner.nextDouble();
+                        nextDouble() read only 5 and there is \n left
+
+                        Then if you run:
+                            String storeName = scanner.nextLine();
+                        nextLin() will take \n character left and immediately return to an emty string
+                        
+                        So you need:
+                            scanner.nextLine();
+                        To consume \n afer every:
+                            nextDouble()
