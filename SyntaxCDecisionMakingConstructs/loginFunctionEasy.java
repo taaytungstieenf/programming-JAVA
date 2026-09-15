@@ -2,7 +2,7 @@ package SyntaxCDecisionMakingConstructs;
 
 import java.util.Scanner;
 
-public class LoginFunction {
+public class loginFunctionEasy {
     public static void main(String[] args) {
         String userName = "root";
         String password = "admin";
