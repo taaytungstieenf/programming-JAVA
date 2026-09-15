@@ -1,4 +1,4 @@
-package SyntaxBVariationandOperation;
+package SyntaxBVariationAndOperation;
 
 import java.util.Scanner;
 
