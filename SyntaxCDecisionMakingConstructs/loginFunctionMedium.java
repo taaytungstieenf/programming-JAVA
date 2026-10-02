@@ -5,49 +5,36 @@ import java.util.Scanner;
 public class loginFunctionMedium {
     public static void main(String[] args) {
 
-        String userName = "root";
+        String username = "root";
         String password = "admin";
+        int attempts = 3;
 
-        Scanner scanner = new Scanner(System.in);
+        while(attempts >= 0){
 
-        int maxAttempts = 3;
-        int attempt = 0;
-        boolean loginSuccessful = false;
+            Scanner scanner = new Scanner(System.in);
 
-        while (attempt < maxAttempts) {
+            System.out.print("username: ");
+            String user = scanner.nextLine();
 
-            System.out.println("\n--- LOGIN ---");
+            System.out.print("password: ");
+            String pass = scanner.nextLine();
 
-            System.out.print("Enter username: ");
-            String inputUsername = scanner.nextLine();
-
-            System.out.print("Enter password: ");
-            String inputPassword = scanner.nextLine();
-
-            attempt++;
-
-            if (inputUsername.equals(userName) && inputPassword.equals(password)) {
-
-                System.out.println("Login successful!");
-                loginSuccessful = true;
+            if(pass.equals(password) && user.equals(username)){
+                System.out.print("Log in successful");
                 break;
-
-            } else if (!inputUsername.equals(userName)) {
-
-                System.out.println("User not found.");
-
-            } else {
-
-                System.out.println("Invalid password.");
+            }
+            else if(user.equals(username)) {
+                System.out.println("Wrong password!");
+                attempts--;
+            }
+            else {
+                System.out.println("Invalidroot username");
+                attempts--;
             }
 
-            System.out.println("Attempts remaining: " + (maxAttempts - attempt));
+            if (attempts < 0) {
+                System.out.println("your account has been blocked!");
+            }
         }
-
-        if (!loginSuccessful) {
-            System.out.println("\nAccount locked.");
-        }
-
-        scanner.close();
     }
 }
