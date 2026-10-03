@@ -1,8 +1,8 @@
-package SyntaxAIntroduction;                        // declare package name we are in
+package SyntaxAIntroduction;
 
-public class HelloWorld {                           // declare class name
-    public static void main(String[] args) {        // main method - entry point of the program
-        System.out.println("Hello, World!");
+public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello, Tae!");
     }
 }
 

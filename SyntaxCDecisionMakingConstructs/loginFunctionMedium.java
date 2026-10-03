@@ -5,11 +5,11 @@ import java.util.Scanner;
 public class loginFunctionMedium {
     public static void main(String[] args) {
 
-        String username = "root";
-        String password = "admin";
-        int attempts = 3;
+        String username = "taetaetae333";
+        String password = "Ritchie2Guns";
+        int maxAttempts = 5;
 
-        while(attempts >= 0){
+        while(maxAttempts > 0){
 
             Scanner scanner = new Scanner(System.in);
 
@@ -20,21 +20,20 @@ public class loginFunctionMedium {
             String pass = scanner.nextLine();
 
             if(pass.equals(password) && user.equals(username)){
-                System.out.print("Log in successful");
+                System.out.print("Log in successfully!");
                 break;
             }
             else if(user.equals(username)) {
                 System.out.println("Wrong password!");
-                attempts--;
+                maxAttempts--;
             }
             else {
-                System.out.println("Invalidroot username");
-                attempts--;
+                System.out.println("Invalid username");
+                maxAttempts--;
             }
-
-            if (attempts < 0) {
-                System.out.println("your account has been blocked!");
-            }
+        }
+        if (maxAttempts == 0) {
+                System.out.println("Your account has been blocked!");
         }
     }
 }

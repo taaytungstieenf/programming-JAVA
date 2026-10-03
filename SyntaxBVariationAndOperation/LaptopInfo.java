@@ -6,25 +6,29 @@ public class LaptopInfo {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Please enter your laptop name: ");
-        String productName = scanner.nextLine();
+        System.out.print("- Please enter your username: ");
+        String username = scanner.nextLine();
 
-        System.out.print("Please enter laptop vendor: ");
-        String vendorName = scanner.nextLine();
+        System.out.print("- Please enter your password: ");
+        String password = scanner.nextLine();
 
-        System.out.print("Please enter laptop RAM capacity (GB): ");
-        int ramCapacity = scanner.nextInt();
-        scanner.nextLine(); // Consume the newline character left by nextInt()
+        System.out.print("- Please enter your fullname: ");
+        String fullname = scanner.nextLine();
 
-        System.out.print("Please enter laptop ROM capacity (GB): ");
-        int romCapacity = scanner.nextInt();
+        System.out.print("- Please enter your year of birth: ");
+        int YoB = scanner.nextInt();
+        scanner.nextLine();
 
-        System.out.println("\n--- LAP TOP INFORMATION ---");
-        System.out.println("Laptop Name: " + productName);
-        System.out.println("Vendor Name: " + vendorName);
-        System.out.println("RAM Capacity: " + ramCapacity + " GB");
-        System.out.println("ROM Capacity: " + romCapacity + " GB");
+        System.out.print("- Please enter your nationality: ");
+        String nationality = scanner.nextLine();
 
-        scanner.close(); // Close the scanner to prevent resource leaks
+        System.out.println("\n--- YOUR ACCOUNT INFORMATION ---");
+        System.out.println("Username: " + username);
+        System.out.println("Password: " + password);
+        System.out.println("Full Name: " + fullname);
+        System.out.println("Year of Birth: " + YoB);
+        System.out.println("Nationality: " + nationality);
+
+        scanner.close();
     }
 }
