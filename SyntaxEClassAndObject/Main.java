@@ -25,10 +25,10 @@ public class Main {
         user1.changePassword("Ritchie2Guns", "NewPassword123");
 
         // 5. Log in with new password
-        System.out.println("New login: " + user1.login("taetaetae333", "NewPassword123"));
+        System.out.println("New password login: " + user1.login("taetaetae333", "NewPassword123"));
 
         // 6. Log in with old password
-        System.out.println("Old login: " + user1.login("taetaetae333", "Ritchie2Guns"));
+        System.out.println("Old password login: " + user1.login("taetaetae333", "Ritchie2Guns"));
 
         // 7. Display updated user information
         user1.displayInfo();
