@@ -9,9 +9,9 @@ public class loginWhile {
         String password = "Ritchie2Guns";
         int maxAttempts = 5;
 
-        while(maxAttempts > 0){
+        Scanner scanner = new Scanner(System.in);
 
-            Scanner scanner = new Scanner(System.in);
+        while(maxAttempts > 0){
 
             System.out.print("username: ");
             String user = scanner.nextLine();
@@ -37,5 +37,7 @@ public class loginWhile {
         if (maxAttempts == 0) {
                 System.out.println("Your account has been blocked!");
         }
+
+        scanner.close();
     }
 }
