@@ -2,7 +2,7 @@ package SyntaxBVariationAndOperation;
 
 import java.util.Scanner;
 
-public class LaptopInfo {
+public class createAccount {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 

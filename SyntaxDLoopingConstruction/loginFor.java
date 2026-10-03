@@ -1,17 +1,16 @@
-package SyntaxCDecisionMakingConstructs;
+package SyntaxDLoopingConstruction;
 
 import java.util.Scanner;
 
-public class loginFunctionMedium {
+public class loginFor {
     public static void main(String[] args) {
 
         String username = "taetaetae333";
         String password = "Ritchie2Guns";
-        int maxAttempts = 5;
 
-        while(maxAttempts > 0){
+        Scanner scanner = new Scanner(System.in);
 
-            Scanner scanner = new Scanner(System.in);
+        for (int attempt = 1; attempt <= 5; attempt++) {
 
             System.out.print("username: ");
             String user = scanner.nextLine();
@@ -19,21 +18,20 @@ public class loginFunctionMedium {
             System.out.print("password: ");
             String pass = scanner.nextLine();
 
-            if(pass.equals(password) && user.equals(username)){
-                System.out.print("Log in successfully!");
+            if (pass.equals(password) && user.equals(username)) {
+                System.out.println("Log in successfully!");
                 break;
             }
-            else if(user.equals(username)) {
+            else if (user.equals(username)) {
                 System.out.println("Wrong password!");
-                maxAttempts--;
             }
             else {
                 System.out.println("Invalid username");
-                maxAttempts--;
             }
+
+            System.out.println("Attempts remaining: " + (5 - attempt));
         }
-        if (maxAttempts == 0) {
-                System.out.println("Your account has been blocked!");
-        }
+
+        scanner.close();
     }
 }
