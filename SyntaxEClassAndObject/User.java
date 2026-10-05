@@ -1,13 +1,13 @@
 package SyntaxEClassAndObject;
 
-public class userInfo {
+public class User {
     private String username;
     private String password;
     private String fullname;
     private int birthyear;
     private String nationality;
 
-    public userInfo(String username, String password, String fullname, int birthyear, String nationality) {
+    public User(String username, String password, String fullname, int birthyear, String nationality) {
         this.username = username;
         this.password = password;
         this.fullname = fullname;
@@ -33,21 +33,5 @@ public class userInfo {
     public void updateNationality(String newNationality) {
         nationality = newNationality;
         System.out.println("Nationality updated!");
-    }
-
-    // 4th method: Change password
-    public void changePassword(String oldPassword, String newPassword) {
-        if (password.equals(oldPassword)) {
-            password = newPassword;
-            System.out.println("Password changed successfully!");
-        } else {
-            System.out.println("Incorrect old password!");
-        }
-    }
-
-    // 5th method: login
-    public boolean login(String inputUsername, String inputPassword) {
-        return username.equals(inputUsername)
-                && password.equals(inputPassword);
     }
 }
