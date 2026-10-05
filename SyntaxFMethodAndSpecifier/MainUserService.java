@@ -1,9 +1,9 @@
 package SyntaxFMethodAndSpecifier;
 
-public class Main {
+public class MainUserService {
     public static void main(String[] args) {
         // Khởi tạo đối tượng UserService
-        UserService service = new UserService();
+        userService service = new userService();
 
         System.out.println("=== BẮT ĐẦU CHẠY CHƯƠNG TRÌNH ĐĂNG KÝ ===\n");
 

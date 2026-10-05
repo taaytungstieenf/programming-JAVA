@@ -1,6 +1,6 @@
 package SyntaxFMethodAndSpecifier;
 
-public class UserService {
+public class userService {
     // 1. Thuộc tính private: Lưu danh sách/đếm số người dùng (ẩn với bên ngoài)
     private int userCount = 0;
 
