@@ -1,30 +1,35 @@
 package SyntaxFMethodAndSpecifier;
 
 public class UserServiceMethod {
-    // 1. Thuộc tính private: Lưu danh sách/đếm số người dùng (ẩn với bên ngoài)
+
     private int userCount = 0;
 
-    // 2. Phương thức private: Helper method để kiểm tra định dạng email
-    // Bên ngoài (như Main) KHÔNG THỂ gọi trực tiếp hàm này.
-    private boolean isValidEmail(String email) {                            // hàm điều kiện duy nhất
+    private boolean isValidEmail(String email) {
         return email != null && email.contains("@");
     }
 
-    // 3. Phương thức public: Giao diện (API) cho bên ngoài sử dụng         // hàm xuất thông tin đăng ký và sử dụng hàm private để kiểm tra email 
-    public boolean registerUser(String username, String email) {
-        // Gọi lại hàm private nội bộ để kiểm tra
+    private boolean isValidPhoneNumber(String phoneNumber) {
+        return phoneNumber != null && phoneNumber.length() == 10;
+    }
+
+    public boolean registerUser(String username, String email, String phoneNumber) {
+
         if (!isValidEmail(email)) {
-            System.out.println("❌ Đăng ký thất bại cho [" + username + "]: Email không hợp lệ!");
+            System.out.println("Register failed for " + username + ", email is invalid!");
+            return false;
+        }
+
+        if (!isValidPhoneNumber(phoneNumber)) {
+            System.out.println("Register failed for " + username + ", phone number is invalid!");
             return false;
         }
 
         userCount++;
-        System.out.println("✅ Đăng ký thành công: " + username + " (" + email + ")");
+        System.out.println("Register succesfully for " + username);
         return true;
     }
 
-    // 4. Phương thức public: Cho phép bên ngoài xem số lượng user (nhưng không thể sửa trực tiếp userCount)
-    public int getUserCount() {                                             // hàm xuất số lượng user đã đăng ký
+    public int getUserCount() {
         return userCount;
     }
 }
