@@ -4,7 +4,7 @@ package SyntaxEClassAndObject;
 public class Main {
     public static void main(String[] args) {
 
-        UserInfo user1 = new UserInfo(
+        User user1 = new User(
                 "taetaetae333",
                 "Ritchie2Guns",
                 "Nguyen Duc Tay",
