@@ -18,6 +18,7 @@ public class User {
     public void displayInfo() {
         System.out.println("\n--- USER INFORMATION ---");
         System.out.println("- Username: " + username);
+        System.out.println("- Password: " + password);
         System.out.println("- Full Name: " + fullname);
         System.out.println("- Birth Year: " + birthyear);
         System.out.println("- Nationality: " + nationality + "\n");
