@@ -2,23 +2,13 @@ package SyntaxFMethodAndSpecifier;
 
 public class User {
 
-    // =========================
-    // PRIVATE FIELDS
-    // =========================
-
     private String username;
     private String password;
     private String fullname;
     private int birthyear;
     private String nationality;
 
-
-    // =========================
-    // PUBLIC CONSTRUCTOR
-    // =========================
-
-    public User(String username, String password, String fullname,
-                    int birthyear, String nationality) {
+    public User(String username, String password, String fullname, int birthyear, String nationality) {
 
         this.username = username;
         this.password = password;
@@ -26,11 +16,6 @@ public class User {
         this.birthyear = birthyear;
         this.nationality = nationality;
     }
-
-
-    // =========================
-    // PUBLIC METHODS
-    // =========================
 
     // 1st method: Display user information
     public void displayInfo() {
@@ -42,13 +27,11 @@ public class User {
         System.out.println("- Nationality: " + nationality);
     }
 
-
     // 2nd method: Calculate age
     public int calculateAge(int currentYear) {
 
         return currentYear - birthyear;
     }
-
 
     // 3rd method: Update nationality
     public void updateNationality(String newNationality) {
@@ -57,7 +40,6 @@ public class User {
 
         System.out.println("Nationality updated!");
     }
-
 
     // 4th method: Change password
     public void changePassword(String oldPassword, String newPassword) {
@@ -82,10 +64,6 @@ public class User {
                 && isCorrectPassword(inputPassword);
     }
 
-
-    // =========================
-    // PRIVATE METHODS
-    // =========================
 
     // Private method 1:
     // Check whether the username is correct
