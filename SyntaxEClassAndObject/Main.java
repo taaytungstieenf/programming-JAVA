@@ -1,4 +1,3 @@
-
 package SyntaxEClassAndObject;
 
 public class Main {
@@ -12,16 +11,12 @@ public class Main {
                 "Vietnamese"
         );
 
-        // 1. Display user information
         user1.displayInfo();
 
-        // 2. Calculate age
         System.out.println("Age: " + user1.calculateAge(2026));
 
-        // 3. Update nationality
         user1.updateNationality("Canadian");
 
-        // 4. Display updated user information
         user1.displayInfo();
     }
 }

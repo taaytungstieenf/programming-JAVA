@@ -15,7 +15,6 @@ public class User {
         this.nationality = nationality;
     }
 
-    // 1st method: Display user information
     public void displayInfo() {
         System.out.println("\n--- USER INFORMATION ---");
         System.out.println("- Username: " + username);
@@ -24,12 +23,10 @@ public class User {
         System.out.println("- Nationality: " + nationality + "\n");
     }
 
-    // 2nd method: Calculate age
     public int calculateAge(int currentYear) {
         return currentYear - birthyear;
     }
 
-    // 3rd method: Update nationality
     public void updateNationality(String newNationality) {
         nationality = newNationality;
         System.out.println("Nationality updated!");
