@@ -4,7 +4,6 @@ public class Main {
 
     public static void main(String[] args) {
 
-        // Create Object
         User user1 = new User(
                 "taetaetae333",
                 "Ritchie2Guns",
@@ -13,81 +12,21 @@ public class Main {
                 "Vietnamese"
         );
 
-
-        // =========================
-        // 1. Display user information
-        // =========================
-
         user1.displayInfo();
 
-
-        // =========================
-        // 2. Calculate age
-        // =========================
-
-        System.out.println(
-                "Age: " + user1.calculateAge(2026)
-        );
-
-
-        // =========================
-        // 3. Update nationality
-        // =========================
+        System.out.println("Age: " + user1.calculateAge(2026));
 
         user1.updateNationality("Canadian");
 
+        user1.changePassword("Ritchie2Guns", "NewPassword123");
 
-        // =========================
-        // 4. Change password
-        // =========================
+        System.out.println("New password login: " + user1.login("taetaetae333", "NewPassword123"));
 
-        user1.changePassword(
-                "Ritchie2Guns",
-                "NewPassword123"
-        );
-
-
-        // =========================
-        // 5. Login with new password
-        // =========================
-
-        System.out.println(
-                "New password login: "
-                + user1.login(
-                        "taetaetae333",
-                        "NewPassword123"
-                )
-        );
-
-
-        // =========================
-        // 6. Login with old password
-        // =========================
-
-        System.out.println(
-                "Old password login: "
-                + user1.login(
-                        "taetaetae333",
-                        "Ritchie2Guns"
-                )
-        );
-
-
-        // =========================
-        // 7. Display updated information
-        // =========================
+        System.out.println("Old password login: " + user1.login("taetaetae333", "Ritchie2Guns"));
 
         user1.displayInfo();
 
-
-        // =========================
-        // 8. TRY PRIVATE METHOD
-        // =========================
-
-        // KHÔNG ĐƯỢC:
-        // user1.isCorrectUsername("taetaetae333");
-
-        // KHÔNG ĐƯỢC:
-        // user1.isCorrectPassword("NewPassword123");
+        // System.out.println(user1.isCorrectUsername("taetaetae333"));
+        // System.out.println(user1.isCorrectPassword("NewPassword123"));
     }
 }
