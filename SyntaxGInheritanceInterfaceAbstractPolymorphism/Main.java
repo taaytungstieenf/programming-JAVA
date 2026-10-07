@@ -1,4 +1,4 @@
-package SyntaxHInheritanceInterfaceAbstractPolymorphism;
+package SyntaxGInheritanceInterfaceAbstractPolymorphism;
 
 import java.util.Scanner;
 

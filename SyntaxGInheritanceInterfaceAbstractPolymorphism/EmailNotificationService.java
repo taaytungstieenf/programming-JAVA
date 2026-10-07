@@ -1,4 +1,4 @@
-package SyntaxHInheritanceInterfaceAbstractPolymorphism;
+package SyntaxGInheritanceInterfaceAbstractPolymorphism;
 
 public class EmailNotificationService extends BaseNotificationService {
     public EmailNotificationService(String senderName) {

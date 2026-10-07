@@ -1,4 +1,4 @@
-package SyntaxGPakagesAndJavaLang;
+package SyntaxHPakagesAndJavaLang;
 
 public class ApiResponse {
     private String status;

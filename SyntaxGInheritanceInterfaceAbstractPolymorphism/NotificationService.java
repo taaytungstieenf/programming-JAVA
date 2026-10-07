@@ -1,4 +1,4 @@
-package SyntaxHInheritanceInterfaceAbstractPolymorphism;
+package SyntaxGInheritanceInterfaceAbstractPolymorphism;
 
 // INTERFACE: Định nghĩa contract chung
 public interface NotificationService {

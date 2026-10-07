@@ -1,4 +1,4 @@
-package SyntaxGPakagesAndJavaLang;
+package SyntaxHPakagesAndJavaLang;
 
 // Phải import ApiResponse vì nó ở package com.example.model
 // import SyntaxGPakagesAndJavaLang.ApiResponse;
