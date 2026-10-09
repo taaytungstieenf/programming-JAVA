@@ -6,7 +6,7 @@ public class Main {
 
         System.out.println("========== REGULAR USER ==========");
 
-        Customer regularUser = new Customer(
+        Customer customer = new Customer(
                 "taetaetae333",
                 "Ritchie2Guns",
                 "Nguyen Duc Tay",
@@ -15,17 +15,17 @@ public class Main {
                 "Premium"
         );
 
-        regularUser.displayInfo();
-        System.out.println("Age: " + regularUser.calculateAge(2026));
+        customer.displayInfo();
+        System.out.println("Age: " + customer.calculateAge(2026));
 
         System.out.println("\n--- LOGIN TEST ---");
         System.out.println(
                 "Login successful: "
-                + regularUser.login("taetaetae333", "Ritchie2Guns")
+                + customer.login("taetaetae333", "Ritchie2Guns")
         );
 
-        regularUser.viewPersonalProfile();
-        regularUser.displayMembership();
+        customer.viewPersonalProfile();
+        customer.displayMembership();
 
         System.out.println("\n========== ADMIN ==========");
 
