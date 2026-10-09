@@ -1,4 +1,4 @@
-package SyntaxKFileHandlingInJava;
+package SyntaxN_FileHandlingInJava;
 
 import java.io.IOException;
 import java.nio.file.Files;
