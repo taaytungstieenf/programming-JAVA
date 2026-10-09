@@ -1,4 +1,4 @@
-package SyntaxEClassAndObject;
+package SyntaxE_ClassAndObject;
 
 public class User {
     private String username;

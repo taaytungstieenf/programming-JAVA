@@ -1,4 +1,4 @@
-package SyntaxFMethodAndSpecifier;
+package SyntaxF_MethodAndSpecifier;
 
 public class Main {
 

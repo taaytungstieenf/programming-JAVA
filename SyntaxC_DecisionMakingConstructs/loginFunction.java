@@ -1,4 +1,4 @@
-package SyntaxCDecisionMakingConstructs;
+package SyntaxC_DecisionMakingConstructs;
 
 import java.util.Scanner;
 

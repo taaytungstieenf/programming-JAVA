@@ -1,4 +1,4 @@
-package SyntaxDLoopingConstruction;
+package SyntaxD_LoopingConstruction;
 
 import java.util.Scanner;
 

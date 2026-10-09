@@ -1,4 +1,4 @@
-package SyntaxAIntroduction;
+package SyntaxA_Introduction;
 
 public class HelloWorld {
     public static void main(String[] args) {
