@@ -1,4 +1,4 @@
-package SyntaxIExceptionAndRegularExpression;
+package SyntaxL_ExceptionAndRegularExpression;
 
 public class User {
     private String username;

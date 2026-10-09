@@ -1,4 +1,4 @@
-package SyntaxLJDBC;
+package SyntaxP_JDBC;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

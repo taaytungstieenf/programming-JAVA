@@ -1,4 +1,4 @@
-package SyntaxLJDBC;
+package SyntaxP_JDBC;
 
 public class User {
     private Long id;

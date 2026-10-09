@@ -1,4 +1,4 @@
-package SyntaxJCollectionAndGeneric;
+package SyntaxM_CollectionAndGeneric;
 
 public class Product {
     private Integer id;

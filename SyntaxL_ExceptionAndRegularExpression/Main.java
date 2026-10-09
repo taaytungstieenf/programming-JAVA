@@ -1,4 +1,4 @@
-package SyntaxIExceptionAndRegularExpression;
+package SyntaxL_ExceptionAndRegularExpression;
 
 import java.util.Scanner;
 

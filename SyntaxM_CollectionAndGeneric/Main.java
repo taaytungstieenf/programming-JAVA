@@ -1,4 +1,4 @@
-package SyntaxJCollectionAndGeneric;
+package SyntaxM_CollectionAndGeneric;
 
 import java.util.List;
 import java.util.Optional;

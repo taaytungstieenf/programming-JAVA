@@ -1,7 +1,7 @@
-package SyntaxHPakagesAndJavaLang;
+package SyntaxK_PakagesAndJavaLang;
 
 // Phải import ApiResponse vì nó ở package com.example.model
-// import SyntaxGPakagesAndJavaLang.ApiResponse;
+// import SyntaxK_PakagesAndJavaLang.ApiResponse;
 
 // Scanner thuộc java.util nên cũng cần import
 import java.util.Scanner;

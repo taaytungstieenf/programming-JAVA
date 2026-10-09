@@ -1,4 +1,4 @@
-package SyntaxLJDBC;
+package SyntaxP_JDBC;
 
 import java.util.List;
 import java.util.Scanner;

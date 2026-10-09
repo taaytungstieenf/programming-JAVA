@@ -1,4 +1,4 @@
-package SyntaxJCollectionAndGeneric;
+package SyntaxM_CollectionAndGeneric;
 
 import java.util.ArrayList;
 import java.util.List;
