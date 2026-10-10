@@ -21,13 +21,12 @@ public class User {
     private boolean isCorrectUsername(String inputUsername) {
         return username.equals(inputUsername);
     }
-
     private boolean isCorrectPassword(String inputPassword) {
         return password.equals(inputPassword);
     }
 
     public void displayInfo() {
-        System.out.println("\n--- USER INFORMATION ---");
+        System.out.println("\n# USER INFORMATION");
         System.out.println("- Username: " + username);
         System.out.println("- Password: " + password);
         System.out.println("- Full Name: " + fullname);
@@ -41,22 +40,19 @@ public class User {
 
     public void updateNationality(String newNationality) {
         nationality = newNationality;
-        System.out.println("Nationality updated!");
     }
 
-    public void changePassword(String oldPassword,
-                               String newPassword) {
+    public void changePassword(String oldPassword, String newPassword) {
 
         if (isCorrectPassword(oldPassword)) {
             password = newPassword;
-            System.out.println("Password changed successfully!");
+            System.out.println(". Password changed successfully!");
         } else {
-            System.out.println("Incorrect old password!");
+            System.out.println(". Incorrect old password!");
         }
     }
 
-    public boolean login(String inputUsername,
-                         String inputPassword) {
+    public boolean login(String inputUsername, String inputPassword) {
 
         return isCorrectUsername(inputUsername)
                 && isCorrectPassword(inputPassword);
