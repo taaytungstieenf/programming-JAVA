@@ -8,9 +8,8 @@ public class User {
     private int birthyear;
     private String nationality;
 
-    public User(String username, String password,
-                String fullname, int birthyear,
-                String nationality) {
+    public User(String username, String password, 
+                String fullname, int birthyear, String nationality) {
 
         this.username = username;
         this.password = password;
