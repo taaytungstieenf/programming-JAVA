@@ -45,11 +45,11 @@ public class Main {
                 1999,
                 "Vietnamese",
                 "Premium",
-                "CU00001"
+                "ST00001"
         );
 
-        // Display customer information
-        staff.updateNationality("American");
+        // Display staff information
+        staff.updateNationality("Canadian");
         staff.displayInfo();
         System.out.println("- Age: " + staff.calculateAge(2026));
 
@@ -81,7 +81,7 @@ public class Main {
         );
 
         // Display customer information
-        admin.updateNationality("American");
+        admin.updateNationality("Australian");
         admin.displayInfo();
         System.out.println("- Age: " + admin.calculateAge(2026));
 
