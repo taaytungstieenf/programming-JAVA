@@ -1,6 +1,6 @@
 package SyntaxI_Interface;
 
-public class Staff extends User {
+public class Staff extends User implements Identifiable {
 
     private String staffLevel;
     private String staffId;
@@ -18,6 +18,11 @@ public class Staff extends User {
 
         this.staffLevel = staffLevel;
         this.staffId = staffId;
+    }
+
+    @Override
+    public String getId() {
+        return staffId;
     }
 
     public void displayStaffId() {

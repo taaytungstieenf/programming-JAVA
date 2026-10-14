@@ -1,6 +1,6 @@
 package SyntaxI_Interface;
 
-public class Admin extends User {
+public class Admin extends User implements Identifiable{
 
     private String adminLevel;
     private String adminId;
@@ -18,6 +18,11 @@ public class Admin extends User {
 
         this.adminLevel = adminLevel;
         this.adminId = adminId;
+    }
+
+    @Override
+    public String getId() {
+        return adminId;
     }
 
     public void displayAdminId() {

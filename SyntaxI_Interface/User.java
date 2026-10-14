@@ -1,6 +1,6 @@
 package SyntaxI_Interface;
 
-public abstract class User {
+public abstract class User implements Authenticatable {
 
     private String username;
     private String password;
@@ -54,6 +54,7 @@ public abstract class User {
         nationality = newNationality;
     }
 
+    @Override 
     public void changePassword(String oldPassword,
                                String newPassword) {
 
@@ -69,6 +70,7 @@ public abstract class User {
         }
     }
 
+    @Override
     public boolean login(String inputUsername,
                          String inputPassword) {
 

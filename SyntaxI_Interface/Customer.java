@@ -1,6 +1,6 @@
 package SyntaxI_Interface;
 
-public class Customer extends User {
+public class Customer extends User implements Identifiable {
 
     private String customerId;
     private String membershipType;
@@ -18,6 +18,11 @@ public class Customer extends User {
 
         this.membershipType = membershipType;
         this.customerId = customerId;
+    }
+
+    @Override
+    public String getId() {
+        return customerId;
     }
 
     @Override
