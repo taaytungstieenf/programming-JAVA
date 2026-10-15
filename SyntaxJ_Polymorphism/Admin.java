@@ -1,6 +1,6 @@
 package SyntaxJ_Polymorphism;
 
-public class Admin extends User implements Identifiable{
+public class Admin extends User implements Identifiable {
 
     private String adminLevel;
     private String adminId;

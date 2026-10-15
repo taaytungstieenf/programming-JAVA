@@ -8,9 +8,9 @@ public abstract class User implements Authenticatable {
     private int birthyear;
     private String nationality;
 
-    public User(String username, 
+    public User(String username,
                 String password,
-                String fullname, 
+                String fullname,
                 int birthyear,
                 String nationality) {
 
@@ -36,7 +36,7 @@ public abstract class User implements Authenticatable {
 
         System.out.println("\n# USER INFORMATION");
 
-        // Call the abstract method
+        // Runtime polymorphism
         displayAccountDetails();
 
         System.out.println("- Username: " + username);
@@ -54,12 +54,13 @@ public abstract class User implements Authenticatable {
         nationality = newNationality;
     }
 
-    @Override 
+    @Override
     public void changePassword(String oldPassword,
                                String newPassword) {
 
         if (isCorrectPassword(oldPassword)) {
             password = newPassword;
+
             System.out.println(
                 ". Password changed successfully!"
             );
