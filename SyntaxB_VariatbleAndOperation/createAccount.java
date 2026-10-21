@@ -22,6 +22,9 @@ public class createAccount {
         System.out.print("- Please enter your nationality: ");
         String nationality = scanner.nextLine();
 
+
+        scanner.close();
+        
         System.out.println("\n--- YOUR ACCOUNT INFORMATION ---");
         System.out.println("Username: " + username);
         System.out.println("Password: " + password);
@@ -29,6 +32,5 @@ public class createAccount {
         System.out.println("Year of Birth: " + YoB);
         System.out.println("Nationality: " + nationality);
 
-        scanner.close();
     }
 }
