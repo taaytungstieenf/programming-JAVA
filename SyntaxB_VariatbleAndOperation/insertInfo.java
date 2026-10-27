@@ -2,7 +2,7 @@ package SyntaxB_VariatbleAndOperation;
 
 import java.util.Scanner;
 
-public class addInfo {
+public class insertInfo {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
