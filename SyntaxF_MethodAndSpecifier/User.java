@@ -7,13 +7,15 @@ public class User {
     private String fullname;
     private int birthyear;
     private String nationality;
+    private String birthplace;
 
-    public User(String username, String password, String fullname, int birthyear, String nationality) {
+    public User(String username, String password, String fullname, int birthyear, String birthplace, String nationality) {
 
         this.username = username;
         this.password = password;
         this.fullname = fullname;
         this.birthyear = birthyear;
+        this.birthplace = birthplace;
         this.nationality = nationality;
     }
 
@@ -31,6 +33,7 @@ public class User {
         System.out.println("- Password: " + password); 
         System.out.println("- Full Name: " + fullname );
         System.out.println("- Birth Year: " + birthyear);
+        System.out.println("- Birth Place: " + birthplace);
         System.out.println("- Nationality: " + nationality);
     }
 

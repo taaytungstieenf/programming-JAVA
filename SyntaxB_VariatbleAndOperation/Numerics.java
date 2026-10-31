@@ -1,47 +1,49 @@
 package SyntaxB_VariatbleAndOperation;
 
+import java.util.Scanner;
+
 public class Numerics {
     public static void main(String[] args) {
-        int a = 10;
-        int b = 3;
-        int c = 5;
 
-        // 1. Arithmetic Operators 
+        Scanner scanner = new Scanner(System.in);
+        		
+		System.out.print("Please input number x: ");
+		int x = scanner.nextInt();
+		System.out.print("Please input number y: ");
+		int y = scanner.nextInt();
+        scanner.nextLine();
+		System.out.print("Please input number z: ");
+		int z = scanner.nextInt();
+
+		scanner.close();
+
         System.out.println("=== ARITHMETIC OPERATORS ===");
-        System.out.println("Addition: " + (a + b));
-        System.out.println("Subtraction: " + (a - b));
-        System.out.println("Multiplication: " + (a * b));
-        System.out.println("Division: " + (a / b));
-        System.out.println("Modulus: " + (a % b));
+        System.out.println("x + y: " + (x + y));
+        System.out.println("x - y: " + (x - y));
+        System.out.println("x * y: " + (x * y));
+    	System.out.println("x / y: " + (x / y));
+    	System.out.println("x % y: " + (x % y));
 
-        // 2. Comparison Operators
         System.out.println("\n=== COMPARISON OPERATORS ===");
-        System.out.println("a > b: " + (a > b));
-        System.out.println("a < b: " + (a < b));
-        System.out.println("a >= b: " + (a >= b));
-        System.out.println("a <= b: " + (a <= b));
-        System.out.println("a == b: " + (a == b));
-        System.out.println("a != b: " + (a != b));
+        System.out.println("x > y: " + (x > y));
+        System.out.println("x < y: " + (x < y));
+        System.out.println("x >= y: " + (x >= y));
+        System.out.println("x <= y: " + (x <= y));
+        System.out.println("x == y: " + (x == y));
+        System.out.println("x != y: " + (x != y));
 
-        // 3. Logical Operators
         System.out.println("\n=== LOGICAL OPERATORS ===");
-        System.out.println("(a > b) && (a > 0): " + ((a > b) && (a > 0)));
-        System.out.println("(a < b) || (a > 0): " + ((a < b) || (a > 0)));
-        System.out.println("!(a > b): " + (!(a > b)));
+        System.out.println("(x > y) && (x > 0): " + ((x > y) && (x > 0)));
+        System.out.println("(x < y) || (x > 0): " + ((x < y) || (x > 0)));
+        System.out.println("!(x > y): " + (!(x > y)));
 
-        // 4. Assignment Operators
         System.out.println("\n=== ASSIGNMENT OPERATORS ===");
 
-        c += 5;
-        System.out.println("c += 5: " + c);
-        c -= 3;
-        System.out.println("c -= 3: " + c);
-        c *= 2;
-        System.out.println("c *= 2: " + c);
-        c /= 4;
-        System.out.println("c /= 4: " + c);
-        c %= 3;
-        System.out.println("c %= 3: " + c);
+        System.out.println("z += 5: " + (z += 5));
+        System.out.println("z -= 3: " + (z -= 3));
+        System.out.println("z *= 2: " + (z *= 2));
+        System.out.println("z /= 4: " + (z /= 4));
+        System.out.println("z %= 3: " + (z %= 3));
     }
 }
 
