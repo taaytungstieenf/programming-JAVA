@@ -38,7 +38,6 @@ public class Numerics {
         System.out.println("!(x > y): " + (!(x > y)));
 
         System.out.println("\n=== ASSIGNMENT OPERATORS ===");
-
         System.out.println("z += 5: " + (z += 5));
         System.out.println("z -= 3: " + (z -= 3));
         System.out.println("z *= 2: " + (z *= 2));

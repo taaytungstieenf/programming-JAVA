@@ -1,0 +1,26 @@
+package SyntaxL_PakagesAndJavaLang.app;
+
+import SyntaxL_PakagesAndJavaLang.model.User;
+import SyntaxL_PakagesAndJavaLang.service.UserService;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        User user = new User(
+                "tay123",
+                "246124",
+                "Nguyen Duc Tay",
+                1999,
+                "Vietnam"
+        );
+
+        UserService userService = new UserService();
+
+        System.out.println("=== USER OBJECT ===");
+        System.out.println(user);
+
+        System.out.println("\n=== USER INFORMATION ===");
+        userService.displayUserInfo(user);
+    }
+}
